@@ -1,6 +1,6 @@
 import streamlit as st
 from transformers import pipeline
-st.title('This is a title')
-txt = st.text_area('Text to analyze', '''
+st.title('Summaraiser')
+txt = st.text_area('Text to summarise', '''
     Input Your Text
     ''')
