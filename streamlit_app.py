@@ -7,4 +7,4 @@ classifier = pipeline("summarization")
 summarise = st.button("Summarise")
 if summarise:
     output = classifier(txt)
-    st.write('Summarised:', output)
+    st.write('Summarised:', output[0]["summary"])
