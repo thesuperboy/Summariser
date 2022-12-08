@@ -4,3 +4,6 @@ st.title('Summaraiser')
 txt = st.text_area('Text to summarise', '''
     Input Your Text
     ''')
+classifier = pipeline("summarization")
+output = classifier(txt)
+st.write('Summarised:', output)
